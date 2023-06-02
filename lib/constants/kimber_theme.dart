@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 // ignore: avoid_classes_with_only_static_members
 class KimberTheme {
@@ -63,16 +62,7 @@ extension TextStyleHelper on TextStyle {
     bool useGoogleFonts = true,
     double? lineHeight,
   }) =>
-      useGoogleFonts
-          ? GoogleFonts.getFont(
-              fontFamily!,
-              color: color ?? this.color,
-              fontSize: fontSize ?? this.fontSize,
-              fontWeight: fontWeight ?? this.fontWeight,
-              fontStyle: fontStyle ?? this.fontStyle,
-              height: lineHeight,
-            )
-          : copyWith(
+      copyWith(
               fontFamily: fontFamily,
               color: color,
               fontSize: fontSize,

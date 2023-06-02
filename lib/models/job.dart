@@ -12,7 +12,7 @@ class Job {
     return [
       Job(
         'Google LLC',
-        'assets/images/google_logo.png',
+        'assets/images/photo1.jpg',
         false,
         'Principal Product Design',
         '417 Marion , New York\nUnited States',
@@ -27,7 +27,7 @@ class Job {
       ),
       Job(
         'Airbnb Inc',
-        'assets/images/airbnb_logo.png',
+        'assets/images/photo1.jpg',
         false,
         'Principal Product Design',
         '417 Marion , New York\nUnited States',
@@ -42,7 +42,7 @@ class Job {
       ),
       Job(
         'Linkedin',
-        'assets/images/linkedin_logo.png',
+        'assets/images/photo1.jpg',
         false,
         'Principal Product Design',
         '417 Marion , New York\nUnited States',

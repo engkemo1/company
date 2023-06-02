@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../constants/kimber_theme.dart';
 import '../../constants/kimber_widgets.dart';
@@ -30,24 +29,6 @@ class _AddJobContentState extends State<AddJobContent> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      key: scaffoldKey,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        automaticallyImplyLeading: false,
-        leading: InkWell(
-          onTap: () async {
-            Navigator.pop(context);
-          },
-          child: Icon(
-            Icons.keyboard_arrow_left_outlined,
-            color: Colors.black,
-            size: 24,
-          ),
-        ),
-        actions: [],
-        centerTitle: true,
-        elevation: 0,
-      ),
       backgroundColor: Colors.white,
       body: Stack(
         children: [
@@ -57,13 +38,14 @@ class _AddJobContentState extends State<AddJobContent> {
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
+                  SizedBox(height: 30,),
                   Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
                         child: Text(
-                          'Create Project',
+                          'Create job',
                           style: KimberTheme.title2,
                         ),
                       ),
@@ -554,7 +536,7 @@ class _AddJobContentState extends State<AddJobContent> {
                                       onPressed: () {
                                         print('Button pressed ...');
                                       },
-                                      text: 'Publish Project',
+                                      text: 'Publish Job',
                                       options: FFButtonOptions(
                                         width: 130,
                                         height: 45,

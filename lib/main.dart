@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:responsive_admin_dashboard/controllers/controller.dart';
-import 'package:responsive_admin_dashboard/screens/shop_screen.dart';
+import 'package:responsive_admin_dashboard/screens/authentication/signUp_view.dart';
+import 'package:responsive_admin_dashboard/screens/components/drawer_menu.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,12 +16,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MultiProvider(
-        providers: [
-          ChangeNotifierProvider(create: (context) => Controller(),)
-        ],
-        child: ShopScreen(),
-      ),
+      home: SignUpView(),
+
     );
   }
 }
